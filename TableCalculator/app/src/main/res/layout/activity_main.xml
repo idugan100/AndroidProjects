@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:context=".MainActivity"
+    >
+
+   <TableRow
+       android:id="@+id/tablerow1"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       >
+       <TextView
+           android:id="@+id/textview1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_span="4"
+           android:background="@color/orange_cream"
+           android:gravity="end"
+           android:text="@string/zero"
+           android:textSize="70sp"
+           />
+   </TableRow>
+    <TableRow
+        android:id="@+id/tablerow2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:backgroundTint="@color/dusk_blue"
+            android:minHeight="70dip"
+            android:onClick="goAC"
+            android:text="@string/ac"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperator"
+            android:layout_span="1"
+            android:text="@string/percent"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperator"
+            android:layout_span="1"
+            android:text="@string/div"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tablerow3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperand"
+            android:textColor="@color/white"
+            android:text="@string/seven"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button5"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperand"
+            android:layout_span="1"
+            android:text="@string/eight"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperand"
+            android:layout_span="1"
+            android:text="@string/nine"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperator"
+            android:layout_span="1"
+            android:text="@string/mult"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tablerow4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperand"
+            android:text="@string/four"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperand"
+            android:layout_span="1"
+            android:text="@string/five"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperand"
+            android:layout_span="1"
+            android:text="@string/six"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperator"
+            android:layout_span="1"
+            android:text="@string/subtract"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tablerow5"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperand"
+            android:text="@string/one"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperand"
+            android:layout_span="1"
+            android:text="@string/two"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperand"
+            android:layout_span="1"
+            android:text="@string/three"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperator"
+            android:layout_span="1"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tablerow6"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:minHeight="70dip"
+            android:onClick="goOperand"
+            android:text="@string/zero"
+            android:layout_span="2"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dusk_blue"
+            android:minHeight="70dip"
+            android:onClick="goComputer"
+            android:text="@string/equal"
+            android:layout_span="2"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </TableRow>
+
+
+</TableLayout>

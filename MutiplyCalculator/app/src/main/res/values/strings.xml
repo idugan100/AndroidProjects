@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MutiplyCalculator</string>
+    <string name="green_button">Multiply</string>
+    <string name="purple_button">Reset</string>
+</resources>

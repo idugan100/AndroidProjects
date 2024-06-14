@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    tools:context=".DataInputActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/car"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_alignRight="@+id/image"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/blue"
+        android:gravity="center_horizontal"
+        android:text="@string/instructions"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:text="@string/car_price"
+        android:textColor="@color/blue"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/blue"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:layout_alignBottom="@id/text2"
+        android:layout_toRightOf="@id/text2"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text3"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/text3"
+        android:width="90dp"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="number"
+        android:textColor="@color/blue">
+
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:text="@string/down_payment"
+        android:textColor="@color/blue"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="17dp"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/blue"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:layout_alignBottom="@id/text4"
+        android:layout_toRightOf="@id/text4"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text5"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/text5"
+        android:width="90dp"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="number"
+        android:textColor="@color/blue">
+
+        <requestFocus />
+    </EditText>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@color/blue"
+        android:paddingRight="40dp"
+        android:paddingLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/years2"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/years3"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/years4"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:text="@string/loan_term"
+        android:textColor="@color/blue"
+        android:textSize="12sp"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/generate_button"
+        android:backgroundTint="@color/blue"
+        android:onClick="activateLoanSummary"/>
+
+
+
+
+</RelativeLayout>
